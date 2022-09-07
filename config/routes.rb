@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  #static_pages
+  get "/home", to: "static_pages#home"
+  get "/signup", to: "static_pages#signup"
+  get "/login", to: "static_pages#login"
 end
+
